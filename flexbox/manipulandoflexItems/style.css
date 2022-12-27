@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: darkgrey; 
+    min-height: 100vh; /*Vh é mais responsivo que pixels. VH = Viewport Height , altura de visualização do usuário */
+    display: flex; /* flex e flexbox são a mesma coisa */
+    gap: 0px 15px; /*Os 15px vão apenas para o column gap, logo a ordem é row gap e column gap*/ 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Stretch = Esticar */
+    /* flex-wrap: wrap; */
+}
+
+.item {
+    width: 200px;
+    height: 70px;
+    border: solid 2px black;
+    background-color: #eee;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    order: 2;
+    align-self: flex-end;
+}
+
+.item2 {
+    order: 3;
+}
+
+.item3 {
+    order: 1;
+}

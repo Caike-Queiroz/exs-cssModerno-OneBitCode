@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: darkgrey; 
+    min-height: 100vh; /*Vh é mais responsivo que pixels. VH = Viewport Height , altura de visualização do usuário */
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    border: solid 2px black;
+    background-color: #eee;
+    font-size: 20px;
+}

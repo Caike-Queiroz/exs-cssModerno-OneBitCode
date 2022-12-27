@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.logo-rock {
+    width: 40px;
+}
+
+.logo-onebitcode {
+    width: 200px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button-header {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.button-header:hover {
+    border-color: #ff0044;
+}
+
+@media(max-width:767px){
+    .logo-rock {
+        display: none;
+    }
+
+}
+
+@media(max-width: 529px){
+    .logo-rock {
+        display: none;
+    }
+    
+    .logo-onebitcode {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
